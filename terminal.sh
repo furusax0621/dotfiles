@@ -5,7 +5,7 @@
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 # プロンプトのテーマをpureに変更
-sed -i .bak -E "/zstyle ':prezto:module:prompt' theme/s/'[a-z]+'/'pure'/" "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/zpreztorc
+sed -i "" -E "/zstyle ':prezto:module:prompt' theme/s/'[a-z]+'/'pure'/" "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/zpreztorc
 
 # rcfileを適用
 setopt EXTENDED_GLOB
