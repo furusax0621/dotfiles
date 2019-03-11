@@ -2,5 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Hybrid Next (Gray Background)",
-    "terminal.integrated.shell.osx": "/bin/zsh"
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "git.autofetch": true,
+    "markdown.extension.orderedList.marker": "one"
 }
