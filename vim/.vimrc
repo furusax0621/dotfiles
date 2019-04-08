@@ -1,2 +1,2 @@
-source ~/dotfiles/vim/bundle.vim
-source ~/dotfiles/vim/base.vim
+source ~/.vim/bundle.vim
+source ~/.vim/base.vim

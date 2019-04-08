@@ -11,5 +11,10 @@ if type code >/dev/null 2>&1; then
 fi
 
 # Vimの環境設定を同期する
+VIMPATH=${HOME}/.vim
+if [ ! -d ${VIMPATH} ]; then
+    mkdir ${VIMAPTH}
+fi
+ln -sf ${dir}/vim/*.vim $VIMPATH/
 ln -sf ${dir}/vim/.vimrc ${HOME}/.vimrc
 
