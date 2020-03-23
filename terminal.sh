@@ -2,7 +2,7 @@
 
 # カラーテーマをIcebergに変更
 PROFILE='Iceberg'
-CURR_PATH=`cd $(dirname ${0}) && pwd`
+CURR_PATH=$(cd "$(dirname "${0}")" && pwd)
 EXEC_PATH="$CURR_PATH/terminal/"
 CURRENT_PROFILE="$(defaults read com.apple.terminal 'Default Window Settings')"
 if [ "${CURRENT_PROFILE}" != "${PROFILE}" ]; then
