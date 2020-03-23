@@ -30,6 +30,8 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'Yggdroot/indentLine'
 " 末尾の全角半角空白文字を赤くハイライト
 NeoBundle 'bronson/vim-trailing-whitespace'
+" Golang 向け拡張
+NeoBundle 'fatih/vim-go'
 
 " インストールするVimプラグインを記述ここまで
 call neobundle#end()
@@ -39,3 +41,8 @@ filetype plugin indent on
 
 " 未インストールのVimプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
 NeoBundleCheck
+
+" settings for vim-go
+" gopls を使う
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
