@@ -1,0 +1,19 @@
+name: notify
+on:
+  pull_request:
+    types: ['edited', 'closed']
+    paths:
+      - 'vscode/*.json'
+
+jobs:
+  notify:
+    name: Slack Notification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: rtCamp/action-slack-notify@v2.0.0
+        env:
+          SLACK_USERNAME: 'Swagger Update Notification'
+          SLACK_ICON: https://avatars2.githubusercontent.com/u/1157344?s=460&v=4
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_TITLE: 'Pull Request'
+          SLACK_MESSAGE: ${{ github.events.html_url }}
