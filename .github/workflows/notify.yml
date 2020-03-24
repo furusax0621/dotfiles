@@ -15,4 +15,4 @@ jobs:
           SLACK_ICON: https://avatars2.githubusercontent.com/u/1157344?s=460&v=4
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_TITLE: 'Pull Request'
-          SLACK_MESSAGE: ${{ github.events.html_url }}
+          SLACK_MESSAGE: ${{ github.event.html_url }}
