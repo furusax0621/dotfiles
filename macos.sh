@@ -4,8 +4,8 @@
 # Dockの拡大機能を有効にする
 defaults write com.apple.dock magnification -bool true
 # Dockのアイコンサイズ(tilesize)と拡大後のサイズ(largesize)を指定する
-defaults write com.apple.dock tilesize -int 50
-defaults write com.apple.dock largesize -int 80
+defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock largesize -int 70
 # 最近使ったアプリケーションを表示しない
 defaults write com.apple.dock show-recents -bool false
 # Dashboardを無効にする
