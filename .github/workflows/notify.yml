@@ -1,7 +1,6 @@
 name: notify
 on:
   pull_request:
-    types: ['edited', 'closed']
     paths:
       - 'vscode/*.json'
 
