@@ -2,7 +2,7 @@
 
 # カラーテーマをIcebergに変更
 PROFILE='Iceberg'
-CURR_PATH=`cd $(dirname ${0}) && pwd`
+CURR_PATH=$(cd "$(dirname "${0}")" && pwd)
 EXEC_PATH="$CURR_PATH/terminal/"
 CURRENT_PROFILE="$(defaults read com.apple.terminal 'Default Window Settings')"
 if [ "${CURRENT_PROFILE}" != "${PROFILE}" ]; then
@@ -15,10 +15,7 @@ defaults import com.apple.Terminal "$EXEC_PATH$PROFILE.plist"
 
 # Preztoのインストール
 # clone
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-
-# プロンプトのテーマをpureに変更
-sed -i "" -E "/zstyle ':prezto:module:prompt' theme/s/'[a-z]+'/'pure'/" "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/zpreztorc
+git clone --recursive https://github.com/furusax0621/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 # rcfileを適用
 setopt EXTENDED_GLOB
